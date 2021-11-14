@@ -1,7 +1,15 @@
 import { Trans } from './styles/style';
+import {useState} from 'react';
 
 function App() {
-  return ( <Trans>
+  const [to, setTo]=useState("");
+  const [from, setFrom]=useState("");
+  const [input, setInput]=useState("");
+  const [output, setOutput]=useState("");
+  const axios = require('axios').default;
+
+
+  return ( <Trans>  
     <div className="App">
      
      From:
